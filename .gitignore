@@ -1,0 +1,14 @@
+# build output (built on deploy, see DEPLOY.md)
+dist/
+
+# duplicate of assets/foto.jpg
+/foto.jpg
+
+# misc
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# wrangler local cache
+.wrangler/

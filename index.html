@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Patrick Ferreira · DevOps &amp; Cloud Engineer</title>
+    <meta
+      name="description"
+      content="Patrick Ferreira · DevOps &amp; Cloud Engineer (Porto Alegre, BR). 8+ anos automatizando plataformas em AWS, Azure e GCP: IaC, CI/CD, Kubernetes, observabilidade e segurança. PT/EN."
+    />
+    <meta name="author" content="Patrick Ferreira" />
+    <meta name="theme-color" content="#09090B" />
+    <meta name="color-scheme" content="dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Patrick Ferreira · DevOps & Cloud Engineer" />
+    <meta
+      property="og:description"
+      content="8+ years building, running and automating cloud platforms. AWS · Azure · GCP · Terraform · Kubernetes · CI/CD · observability · security."
+    />
+    <meta property="og:image" content="assets/foto.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Patrick Ferreira · DevOps & Cloud Engineer" />
+    <meta
+      name="twitter:description"
+      content="DevOps & Cloud Engineer · Porto Alegre, BR · Remote · 500+ users supported · 98%+ SLA."
+    />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2309090B'/%3E%3Cpath d='M7 11l5 5-5 5' stroke='%2338E08A' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 21h9' stroke='%2338E08A' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+
+    <link rel="stylesheet" href="fonts.css?v=18" />
+    <link rel="stylesheet" href="styles.css?v=18" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Patrick Ferreira",
+        "jobTitle": "DevOps & Cloud Engineer",
+        "url": "https://github.com/trickera",
+        "image": "assets/foto.jpg",
+        "address": { "@type": "PostalAddress", "addressLocality": "Porto Alegre", "addressRegion": "RS", "addressCountry": "BR" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "UniRitter" },
+        "sameAs": [
+          "https://github.com/trickera",
+          "https://www.linkedin.com/in/patrick-ferreira-949117212"
+        ],
+        "knowsAbout": ["DevOps","Site Reliability Engineering","AWS","Azure","GCP","Kubernetes","Terraform","CI/CD","Observability","Cloud Security"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-en="skip to content">pular para o conteúdo</a>
+
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-vignette" aria-hidden="true"></div>
+    <div class="bg-scan" aria-hidden="true"></div>
+
+    <!-- Lucide icon sprite -->
+    <svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" /></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 6L2 7" /></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" /></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" /></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></symbol>
+      <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6M12 19h8" /></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></symbol>
+      <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4" /><path d="M3.34 19a10 10 0 1 1 17.32 0" /></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></symbol>
+      <symbol id="i-git-branch" viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15" /><circle cx="18" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M18 9a9 9 0 0 1-9 9" /></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" /><rect x="2" y="14" width="20" height="8" rx="2" /><line x1="6" y1="6" x2="6.01" y2="6" /><line x1="6" y1="18" x2="6.01" y2="18" /></symbol>
+      <symbol id="i-merge" viewBox="0 0 24 24"><circle cx="18" cy="18" r="3" /><circle cx="6" cy="6" r="3" /><path d="M6 21V9a9 9 0 0 0 9 9" /></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="9" y="9" width="6" height="6" /><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2" /></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" /></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6" /><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" /></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.84l8.57 3.9a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0l8.57-3.91a1 1 0 0 0 0-1.83Z" /><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" /></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 16v-4M12 8h.01" /></symbol>
+    </svg>
+
+    <!-- ===================== AMBIENT HUD ===================== -->
+    <div class="hud" aria-hidden="true">
+      <span class="hud__corner hud__tl" id="hudClock">--:--:--</span>
+      <span class="hud__corner hud__tr" id="hudPing">··ms</span>
+      <span class="hud__corner hud__bl" id="hudRes">····x····</span>
+      <span class="hud__corner hud__br" id="hudLoad">Load: ·.··s</span>
+    </div>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="topbar" id="top">
+      <div class="topbar__inner">
+        <a class="brand" href="#top" aria-label="Patrick Ferreira · home">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__user">trickkz@portfolio</span><span class="brand__path">:~$</span>
+        </a>
+
+        <nav class="nav" aria-label="Sections">
+          <a href="#about">./about</a>
+          <a href="#stack">./stack</a>
+          <a href="#xp">./xp</a>
+          <a href="#projects">./projects</a>
+          <a href="#certs">./certs</a>
+          <a href="#contact">./contact</a>
+        </nav>
+
+        <div class="topbar__actions">
+          <span class="badge badge--ok"><span class="pulse" aria-hidden="true"></span>open_to_work</span>
+          <button class="iconbtn langbtn" id="langToggle" type="button" aria-label="Switch language to English" title="EN / PT">
+            <svg class="icon icon--sm" aria-hidden="true"><use href="#i-globe" /></svg><span id="langLabel">EN</span>
+          </button>
+          <button class="iconbtn accentbtn" id="themeToggle" type="button" aria-label="Cor de acento: verde / âmbar" title="cor de acento · accent color" data-en-aria="Accent color: green / amber">
+            <svg class="acc-ico" viewBox="0 0 24 24" aria-hidden="true">
+              <path class="acc-bracket" d="M7 3H4v18h3" /><path class="acc-bracket" d="M17 3h3v18h-3" />
+              <rect class="acc-block" x="9" y="9" width="6" height="6" rx="1.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ===================== STATUS BANNER ===================== -->
+      <div class="statusline" role="status" aria-label="Service status">
+        <span class="statusline__item statusline__item--ok"><span class="pulse" aria-hidden="true"></span>all systems operational</span>
+        <span class="statusline__sep" aria-hidden="true">·</span>
+        <span class="statusline__item">uptime <strong>98%+</strong></span>
+        <span class="statusline__sep" aria-hidden="true">·</span>
+        <span class="statusline__item">region <strong>poa-1</strong></span>
+        <span class="statusline__sep" aria-hidden="true">·</span>
+        <span class="statusline__item">mode <strong>remote / hybrid</strong></span>
+      </div>
+
+      <!-- ===================== HERO ===================== -->
+      <section class="hero" aria-labelledby="hero-name">
+        <div class="hero__copy" data-reveal>
+          <p class="prompt-line">
+            <span class="prompt-line__user">trickkz@portfolio</span><span class="prompt-line__path">:~$</span>
+            <span class="prompt-line__cmd">whoami</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <h1 id="hero-name" aria-label="Patrick Ferreira">patrick_<wbr />ferreira<span class="caret caret--name" aria-hidden="true"></span></h1>
+          <p class="hero__role">DevOps &amp; Cloud Engineer</p>
+          <p class="hero__text" data-en="8+ years in IT. I build, run and automate cloud platforms, focused on reliability, security, observability and operational efficiency.">
+            8+ anos em TI. Construo, sustento e automatizo plataformas em cloud, com foco em confiabilidade, segurança, observabilidade e eficiência operacional.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary spot" href="https://github.com/trickera" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-github" /></svg><span data-en="View GitHub">ver GitHub</span>
+            </a>
+            <button class="btn spot" type="button" data-cv-open aria-haspopup="dialog" aria-controls="cvModal">
+              <svg class="icon" aria-hidden="true"><use href="#i-download" /></svg><span data-en="Download CV">baixar currículo</span>
+            </button>
+            <a class="btn spot js-mail" data-u="trickkkz" data-d="outlook.com" aria-label="Send email" data-en-aria="Send email">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg><span>email</span>
+            </a>
+          </div>
+
+          <ul class="metrics">
+            <li class="spot"><span class="metrics__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-clock" /></svg></span><b>8+</b><span data-en="years in IT">anos em TI</span></li>
+            <li class="spot"><span class="metrics__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-activity" /></svg></span><b>500+</b><span data-en="users supported">usuários suportados</span></li>
+            <li class="spot"><span class="metrics__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-gauge" /></svg></span><b>98%+</b><span data-en="SLA sustained">SLA sustentado</span></li>
+            <li class="spot"><span class="metrics__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-cloud" /></svg></span><b>3</b><span data-en="clouds in production">clouds em produção</span></li>
+          </ul>
+        </div>
+
+        <aside class="panel statuscard spot" aria-label="Operational profile" data-reveal>
+          <div class="panel__bar">
+            <span class="panel__title"><span class="led" aria-hidden="true"></span>infra.status</span>
+            <span class="panel__meta">live</span>
+          </div>
+          <div class="panel__body">
+            <div class="statuscard__id">
+              <img src="assets/foto.jpg" width="52" height="52" alt="Patrick Ferreira" loading="lazy" />
+              <div>
+                <strong>Patrick Ferreira</strong>
+                <span>@trickkz · DevOps · SRE</span>
+              </div>
+            </div>
+            <dl class="kv">
+              <div><dt>role</dt><dd>DevOps &amp; Cloud Engineer</dd></div>
+              <div><dt>region</dt><dd>Porto Alegre, BR</dd></div>
+              <div><dt>mode</dt><dd>remote / hybrid</dd></div>
+              <div><dt>users</dt><dd class="num">500+</dd></div>
+              <div class="kv__sla"><dt>sla</dt><dd><span class="num">98%+</span><span class="bar" role="img" aria-label="SLA above 98 percent"><span class="bar__fill bar__fill--98"></span></span></dd></div>
+              <div><dt>status</dt><dd><span class="tag tag--ok">open_to_work</span></dd></div>
+            </dl>
+            <div class="scard-socials" aria-label="Social links">
+              <a class="scard-soc spot" href="https://github.com/trickera" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-github" /></svg><span>github</span></a>
+              <a class="scard-soc spot" href="https://www.linkedin.com/in/patrick-ferreira-949117212" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-linkedin" /></svg><span>linkedin</span></a>
+              <a class="scard-soc spot js-mail" data-u="trickkkz" data-d="outlook.com" aria-label="Send email" data-en-aria="Send email"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-mail" /></svg><span>email</span></a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section class="section" id="about" aria-labelledby="about-h">
+        <header class="cmd-head" data-reveal>
+          <p class="cmd"><span class="cmd__u">trickkz@portfolio</span><span class="cmd__p">:~$</span> cat <span class="cmd__arg">about.md</span></p>
+          <h2 class="cmd-head__h" id="about-h"><span class="cmd-head__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-info" /></svg></span><span data-en="about">sobre</span></h2>
+        </header>
+        <div class="panel about spot" data-reveal>
+          <div class="panel__bar">
+            <span class="panel__title"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-terminal" /></svg>about.md</span>
+            <span class="panel__meta">~/profile</span>
+          </div>
+          <div class="panel__body about__body">
+            <p data-en="8+ years in IT, from support to DevOps. I run regulated financial environments with CI/CD, IaC (Terraform) and SRE across AWS, Azure and GCP, focused on reliability, MTTR reduction and efficiency at scale.">
+              8+ anos em TI, de suporte a DevOps. Atuo em ambiente financeiro regulado com CI/CD, IaC (Terraform) e SRE em AWS, Azure e GCP, focado em confiabilidade, redução de MTTR e eficiência em escala.
+            </p>
+            <ul class="about__chips" aria-label="Principles">
+              <li># reliability</li><li># automation</li><li># observability</li><li># security</li><li># finops</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== STACK ===================== -->
+      <section class="section" id="stack" aria-labelledby="stack-h">
+        <header class="cmd-head" data-reveal>
+          <p class="cmd"><span class="cmd__u">trickkz@portfolio</span><span class="cmd__p">:~$</span> ls <span class="cmd__arg">stack/</span> <span class="cmd__flag">--tree</span></p>
+          <h2 class="cmd-head__h" id="stack-h"><span class="cmd-head__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-layers" /></svg></span>stack</h2>
+        </header>
+
+        <div class="stack-grid">
+          <article class="panel dir spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title dir__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-cloud" /></svg>cloud/</span><span class="panel__meta">3 providers</span></div>
+            <div class="dir__body">
+              <div class="provider"><span class="provider__tag">AWS</span><ul class="chips"><li>EKS</li><li>EC2</li><li>RDS</li><li>S3</li><li>IAM</li><li>KMS</li><li>VPC</li></ul></div>
+              <div class="provider"><span class="provider__tag">Azure</span><ul class="chips"><li>AKS</li><li>VM</li><li>Entra ID</li></ul></div>
+              <div class="provider"><span class="provider__tag">GCP</span><ul class="chips"><li>GKE</li></ul></div>
+            </div>
+          </article>
+
+          <article class="panel dir spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title dir__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-git-branch" /></svg>iac-ci-cd/</span><span class="panel__meta">pipeline</span></div>
+            <div class="dir__body"><ul class="chips">
+              <li>Terraform</li><li>Ansible</li><li>GitHub Actions</li><li>GitLab CI/CD</li><li>Docker</li><li>Kubernetes</li><li>Helm</li><li>ArgoCD</li><li>GitOps</li>
+            </ul></div>
+          </article>
+
+          <article class="panel dir spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title dir__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-activity" /></svg>observability/</span><span class="panel__meta">signals</span></div>
+            <div class="dir__body"><ul class="chips">
+              <li>Datadog</li><li>Grafana</li><li>Prometheus</li><li>ELK</li><li>Zabbix</li><li>OpenTelemetry</li>
+            </ul></div>
+          </article>
+
+          <article class="panel dir spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title dir__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-shield" /></svg>security/</span><span class="panel__meta">guardrails</span></div>
+            <div class="dir__body"><ul class="chips">
+              <li>KMS</li><li>IAM</li><li>RBAC</li><li>Hardening</li><li>DevSecOps</li><li data-en="Secrets management">Gestão de secrets</li><li>Least privilege</li>
+            </ul></div>
+          </article>
+
+          <article class="panel dir spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title dir__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-server" /></svg>systems/</span><span class="panel__meta">runtime</span></div>
+            <div class="dir__body"><ul class="chips">
+              <li data-en="Advanced Linux">Linux avançado</li><li>RHEL</li><li>Windows Server</li><li>Active Directory</li><li>VMware</li><li>Python</li><li>Bash</li><li>PowerShell</li><li>SQL</li>
+            </ul></div>
+          </article>
+
+          <article class="panel dir spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title dir__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-cpu" /></svg>ai-ops/</span><span class="panel__meta">augmented</span></div>
+            <div class="dir__body">
+              <p class="dir__note" data-en="AI-augmented engineering, day to day: coding agents, MCP and automation of the repetitive work so I ship faster with the same rigor.">Engenharia aumentada por IA no dia a dia: agentes de código, MCP e automação do trabalho repetitivo para entregar mais rápido com o mesmo rigor.</p>
+              <ul class="chips">
+                <li>Claude</li><li>Claude Code</li><li>Codex</li><li>Antigravity</li><li>OpenCode</li><li>Cursor</li><li>GitHub Copilot</li><li>MCP</li><li data-en="agentic workflows">workflows agentic</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="panel dir spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title dir__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-merge" /></svg>practices/</span><span class="panel__meta">ways of working</span></div>
+            <div class="dir__body"><ul class="chips">
+              <li>SRE</li><li>FinOps</li><li>Platform Engineering</li><li data-en="High availability">Alta disponibilidade</li><li data-en="Incident management">Gestão de incidentes</li><li>ITIL</li><li>Scrum</li>
+            </ul></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================== EXPERIENCE ===================== -->
+      <section class="section" id="xp" aria-labelledby="xp-h">
+        <header class="cmd-head" data-reveal>
+          <p class="cmd"><span class="cmd__u">trickkz@portfolio</span><span class="cmd__p">:~$</span> cat <span class="cmd__arg">experience/career.log</span></p>
+          <h2 class="cmd-head__h" id="xp-h"><span class="cmd-head__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-briefcase" /></svg></span><span data-en="experience">experiência</span></h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl tl--featured" data-reveal>
+            <div class="tl__time"><span class="tl__range" data-en="Dec 2024 - Apr 2026">dez 2024 - abr 2026</span><span class="tl__loc" data-en="Remote">Remoto</span></div>
+            <div class="panel tl__card spot">
+              <div class="tl__head">
+                <h3 data-en="DevOps Analyst">Analista DevOps</h3>
+                <span class="tl__org">BoostingMarket.com</span>
+                <span class="tl__flag" data-en="games marketplace">marketplace de jogos</span>
+              </div>
+              <p data-en="DevOps for a digital-games marketplace: microservices on Kubernetes (EKS), CI/CD, IaC and observability at scale.">
+                DevOps em marketplace de jogos digitais: microsserviços em Kubernetes (EKS), CI/CD, IaC e observabilidade em escala.
+              </p>
+              <ul class="tl__list">
+                <li data-en="Re-architected the marketplace's microservices with Docker orchestrated by Kubernetes (AWS EKS), adding auto-scaling (HPA) to handle peaks of 10k+ concurrent active users.">Reestruturei a arquitetura de microsserviços do marketplace com Docker orquestrado por Kubernetes (AWS EKS), com auto-scaling (HPA) para suportar picos de 10k+ usuários ativos simultâneos.</li>
+                <li data-en="Built CI/CD pipelines via GitHub Actions with Python and Bash, cutting average production deploy time from 45 to under 10 minutes with automated validation.">Desenvolvi pipelines de CI/CD via GitHub Actions com Python e Bash, reduzindo o deploy médio em produção de 45 para menos de 10 minutos com validação automatizada.</li>
+                <li data-en="Built and managed IaC with Terraform on AWS (EC2, RDS, S3), cutting staging-environment setup time by 70%.">Criei e gerenciei IaC com Terraform na AWS (EC2, RDS, S3), reduzindo em 70% o tempo de criação de ambientes de homologação.</li>
+                <li data-en="Set up a centralized observability stack (Prometheus, Grafana, Loki) for critical-route latency and database usage, cutting MTTR by 40%.">Implementei observabilidade centralizada (Prometheus, Grafana, Loki) para latência de rotas críticas e consumo de banco, reduzindo o MTTR em 40%.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl" data-reveal>
+            <div class="tl__time"><span class="tl__range">jul 2024 - dez 2024</span><span class="tl__loc">Porto Alegre</span></div>
+            <div class="panel tl__card spot">
+              <div class="tl__head">
+                <h3 data-en="Co-founder &amp; Technical Lead">Cofundador &amp; Responsável Técnico</h3>
+                <span class="tl__org" data-en="Dark Tech · Consulting for investment firms">Dark Tech · Consultoria para escritórios de investimentos</span>
+              </div>
+              <p data-en="Cloud-first architecture for a tech consultancy and custom development for the financial market.">Arquitetura cloud-first para consultoria tecnológica e desenvolvimento sob medida para o mercado financeiro.</p>
+              <ul class="tl__list">
+                <li data-en="AWS infrastructure with Docker, GitHub Actions, KMS and least-privilege IAM.">Infraestrutura AWS com Docker, GitHub Actions, KMS e IAM least privilege.</li>
+                <li data-en="Technical discovery with stakeholders and design of a secure operational baseline.">Levantamento técnico com stakeholders e desenho de base operacional segura.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl" data-reveal>
+            <div class="tl__time"><span class="tl__range" data-en="May 2022 - Jul 2024">mai 2022 - jul 2024</span><span class="tl__loc">Porto Alegre</span></div>
+            <div class="panel tl__card spot">
+              <div class="tl__head">
+                <h3>Ecossistema XP</h3>
+                <span class="tl__org">XP Investimentos · Ável · Be Invest</span>
+                <span class="tl__flag" data-en="regulated financial sector">setor financeiro regulado</span>
+              </div>
+              <p data-en="Technical support leadership and infrastructure sustaining in a regulated financial environment: 500+ users, 98%+ SLA, access governance and operational automation.">
+                Liderança técnica de suporte e sustentação de infraestrutura em ambiente financeiro regulado: 500+ usuários, SLA 98%+, governança de acessos e automação operacional.
+              </p>
+              <ul class="tl__list">
+                <li data-en="Support tech leadership for 500+ users in a regulated financial environment, with 98%+ SLA.">Liderança técnica de suporte para 500+ usuários em ambiente financeiro regulado, com SLA 98%+.</li>
+                <li data-en="Hybrid AWS + Azure infrastructure: EC2, S3, IAM, RBAC, VPC, VMs and Entra ID.">Infraestrutura híbrida AWS + Azure: EC2, S3, IAM, RBAC, VPC, VMs e Entra ID.</li>
+                <li data-en="Linux RHEL and Windows Server administration on VMware vSphere; AD + Entra ID identity.">Administração de Linux RHEL e Windows Server em VMware vSphere; identidade com AD + Entra ID.</li>
+                <li data-en="Routine and backup automation with Ansible, PowerShell and Bash.">Automação de rotinas e backups com Ansible, PowerShell e Bash.</li>
+                <li data-en="Observability with Zabbix and Grafana, reducing MTTR; DevSecOps and hardening.">Observabilidade com Zabbix e Grafana, reduzindo MTTR; DevSecOps e hardening.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl" data-reveal>
+            <div class="tl__time"><span class="tl__range">2015 - 2020</span><span class="tl__loc">Porto Alegre</span></div>
+            <div class="panel tl__card spot">
+              <div class="tl__head">
+                <h3 data-en="Support &amp; Infrastructure Technician">Técnico de Suporte e Infraestrutura</h3>
+                <span class="tl__org">Gigaware Informática</span>
+              </div>
+              <p data-en="Preventive and corrective maintenance of workstations, servers, LANs and Windows systems. Solid troubleshooting and infra foundation.">
+                Manutenção preventiva e corretiva de estações, servidores, redes locais e sistemas Windows. Base sólida de troubleshooting e infraestrutura.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===================== PROJECTS ===================== -->
+      <section class="section" id="projects" aria-labelledby="projects-h">
+        <header class="cmd-head" data-reveal>
+          <p class="cmd"><span class="cmd__u">trickkz@portfolio</span><span class="cmd__p">:~$</span> ls <span class="cmd__arg">projects/</span> <span class="cmd__flag">-la</span></p>
+          <h2 class="cmd-head__h" id="projects-h"><span class="cmd-head__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-folder" /></svg></span><span data-en="projects &amp; cases">projetos &amp; cases</span></h2>
+        </header>
+
+        <div class="projects">
+          <article class="panel project spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title project__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-git-branch" /></svg>eks-platform-infra</span><span class="badge">repo</span></div>
+            <div class="panel__body">
+              <p class="project__desc" data-en="EKS baseline on AWS with Terraform: VPC, cluster, node group, remote state, CI via OIDC and a Prometheus/Grafana stack.">
+                Infra base de EKS na AWS com Terraform: VPC, cluster, node group, state remoto, CI via OIDC e stack Prometheus/Grafana.
+              </p>
+              <ul class="chips"><li>Terraform</li><li>AWS EKS</li><li>OIDC</li><li>S3</li><li>DynamoDB</li><li>Prometheus</li><li>Grafana</li><li>Trivy</li></ul>
+            </div>
+            <div class="project__actions">
+              <a class="btn btn--ghost spot" href="https://github.com/trickera/eks-platform-infra" target="_blank" rel="noopener noreferrer"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-github" /></svg><span data-en="View GitHub">ver GitHub</span><svg class="icon icon--sm icon--ext" aria-hidden="true"><use href="#i-external" /></svg></a>
+              <button class="btn btn--ghost spot" type="button" data-man="eks"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-book" /></svg>man</button>
+            </div>
+          </article>
+
+          <article class="panel project project--case spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title project__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-shield" /></svg>financial-ops-platform</span><span class="badge badge--amber">case</span></div>
+            <div class="panel__body">
+              <p class="project__desc" data-en="Sustaining, automation and observability of a critical operation in the financial sector: identity, hybrid infrastructure and MTTR reduction at regulated scale.">
+                Sustentação, automação e observabilidade de uma operação crítica no setor financeiro: identidade, infraestrutura híbrida e redução de MTTR em escala regulada.
+              </p>
+              <ul class="chips"><li>AWS</li><li>Azure</li><li>VMware</li><li>RHEL</li><li>Windows Server</li><li>AD</li><li>Entra ID</li><li>Zabbix</li><li>DevSecOps</li><li>Ansible</li></ul>
+            </div>
+            <div class="project__actions">
+              <button class="btn btn--ghost spot" type="button" data-man="finops"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-book" /></svg>man</button>
+            </div>
+          </article>
+
+          <article class="panel project spot" data-reveal>
+            <div class="panel__bar"><span class="panel__title project__name"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-terminal" /></svg>trickera/profile</span><span class="badge">readme</span></div>
+            <div class="panel__body">
+              <p class="project__desc" data-en="Public terminal-style README with stack, education, certifications and a focus on Cloud, DevOps, SRE and automation.">
+                README público em formato terminal com stack, formação, certificações e foco em Cloud, DevOps, SRE e automação.
+              </p>
+              <ul class="chips"><li>GitHub</li><li>DevOps</li><li>Cloud</li><li>SRE</li></ul>
+            </div>
+            <div class="project__actions">
+              <a class="btn btn--ghost spot" href="https://github.com/trickera" target="_blank" rel="noopener noreferrer"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-github" /></svg><span data-en="View GitHub">ver GitHub</span><svg class="icon icon--sm icon--ext" aria-hidden="true"><use href="#i-external" /></svg></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================== CERTS / EDUCATION ===================== -->
+      <section class="section" id="certs" aria-labelledby="certs-h">
+        <header class="cmd-head" data-reveal>
+          <p class="cmd"><span class="cmd__u">trickkz@portfolio</span><span class="cmd__p">:~$</span> ./<span class="cmd__arg">cert-verify</span></p>
+          <h2 class="cmd-head__h" id="certs-h"><span class="cmd-head__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-award" /></svg></span><span data-en="education &amp; certifications">formação &amp; certificações</span></h2>
+        </header>
+
+        <article class="panel creds spot" data-reveal>
+          <div class="panel__bar"><span class="panel__title"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-award" /></svg>credentials/</span><span class="panel__meta">verified</span></div>
+          <div class="panel__body creds__body">
+            <section class="creds__group">
+              <span class="creds__label">education/</span>
+              <ul class="certlist">
+                <li><span class="cert__check" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-check" /></svg></span><span class="certlist__txt"><strong data-en="B.Sc. in Computer Science">Bacharelado em Ciência da Computação</strong><br /><em data-en="UniRitter · graduate · 2026">UniRitter · formado · 2026</em></span></li>
+              </ul>
+            </section>
+            <section class="creds__group creds__group--certs">
+              <span class="creds__label">certifications/</span>
+              <ul class="certlist">
+                <li><span class="cert__check" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-check" /></svg></span><span class="certlist__txt">DevOps &amp; Site Reliability Engineering <em>· Linux Foundation</em></span></li>
+                <li><span class="cert__check" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-check" /></svg></span><span class="certlist__txt">Cybersecurity Essentials <em>· Linux Foundation</em></span></li>
+                <li><span class="cert__check" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-check" /></svg></span><span class="certlist__txt" data-en="GitHub Actions: Workflow Automation <em>· GitHub / Microsoft</em>">GitHub Actions: Automação de Workflows <em>· GitHub / Microsoft</em></span></li>
+                <li><span class="cert__check" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-check" /></svg></span><span class="certlist__txt">Cisco Network Basics <em>· Cisco</em></span></li>
+              </ul>
+            </section>
+            <section class="creds__group">
+              <span class="creds__label">languages/</span>
+              <ul class="langs">
+                <li><span data-en="Portuguese">Português</span><b class="lang-amber" data-en="native">nativo</b></li>
+                <li><span data-en="English">Inglês</span><b data-en="advanced">avançado</b></li>
+                <li><span data-en="Spanish">Espanhol</span><b data-en="intermediate">intermediário</b></li>
+              </ul>
+            </section>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section class="section" id="contact" aria-labelledby="contact-h">
+        <header class="cmd-head" data-reveal>
+          <p class="cmd"><span class="cmd__u">trickkz@portfolio</span><span class="cmd__p">:~$</span> ./<span class="cmd__arg">contact.sh</span></p>
+          <h2 class="cmd-head__h" id="contact-h"><span class="cmd-head__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-mail" /></svg></span><span data-en="contact">contato</span></h2>
+        </header>
+
+        <p class="contact__lead" data-reveal data-en="Let's build something reliable. I reply fast, available for remote.">Vamos construir algo confiável. Respondo rápido, disponível para remoto.</p>
+
+        <div class="socials" data-reveal aria-label="Links">
+          <a class="social" href="https://github.com/trickera" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-tip="github.com/trickera"><svg class="icon" aria-hidden="true"><use href="#i-github" /></svg></a>
+          <a class="social" href="https://www.linkedin.com/in/patrick-ferreira-949117212" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tip="/in/patrick-ferreira-949117212"><svg class="icon" aria-hidden="true"><use href="#i-linkedin" /></svg></a>
+          <a class="social js-mail" data-u="trickkkz" data-d="outlook.com" aria-label="Send email" data-en-aria="Send email" data-tip="send email" data-en-tip="send email"><svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg></a>
+          <span class="social__sep" aria-hidden="true"></span>
+          <button class="social" type="button" data-cv-open aria-haspopup="dialog" aria-controls="cvModal" aria-label="Download CV (PDF)" data-en-aria="Download CV (PDF)" data-tip="baixar currículo" data-en-tip="download CV"><svg class="icon" aria-hidden="true"><use href="#i-download" /></svg></button>
+          <button class="social" type="button" id="copyEmail" aria-label="Copy email" data-en-aria="Copy email" data-tip="copiar email" data-en-tip="copy email"><svg class="icon icon--copy" aria-hidden="true"><use href="#i-copy" /></svg><svg class="icon icon--ok" aria-hidden="true"><use href="#i-check" /></svg></button>
+        </div>
+      </section>
+
+      <!-- ===================== INTERACTIVE TERMINAL ===================== -->
+      <section class="section terminal-section" aria-labelledby="term-h">
+        <header class="cmd-head" data-reveal>
+          <p class="cmd"><span class="cmd__u">guest@portfolio</span><span class="cmd__p">:~$</span> ./<span class="cmd__arg">tty</span></p>
+          <h2 class="cmd-head__h" id="term-h"><span class="cmd-head__ico"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-terminal" /></svg></span>terminal</h2>
+        </header>
+
+        <div class="panel terminal spot" data-reveal>
+          <div class="terminal__bar">
+            <span class="terminal__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="terminal__title">guest@portfolio · tty1</span>
+            <button class="terminal__clear" type="button" data-cmd="clear" aria-label="Clear terminal">clear</button>
+          </div>
+          <div class="terminal__output" id="termOut" aria-live="polite" aria-label="Terminal output"></div>
+          <form class="terminal__form" id="termForm">
+            <label class="terminal__label" for="termInput">guest@portfolio:~$</label>
+            <input class="terminal__input" id="termInput" name="termInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Type a command" placeholder="help" />
+          </form>
+          <div class="terminal__chips" role="group" aria-label="Quick commands">
+            <button type="button" data-cmd="help">help</button>
+            <button type="button" data-cmd="stack">stack</button>
+            <button type="button" data-cmd="xp">xp</button>
+            <button type="button" data-cmd="projects">projects</button>
+            <button type="button" data-cmd="certs">certs</button>
+            <button type="button" data-cmd="github">github</button>
+            <button type="button" data-cmd="cv">cv</button>
+            <button type="button" data-cmd="banner">banner</button>
+            <button type="button" data-cmd="lang">lang</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="statusbar">
+      <div class="statusbar__inner">
+        <span class="statusbar__seg statusbar__seg--ok">[ OK ] exit 0</span>
+        <span class="statusbar__seg">© 2026 Patrick Ferreira</span>
+        <span class="statusbar__spacer"></span>
+        <span class="statusbar__hint"><kbd>/</kbd> terminal</span>
+        <span class="statusbar__hint"><kbd>t</kbd> <span data-en="accent">tema</span></span>
+        <span class="statusbar__hint"><kbd>g</kbd> github</span>
+        <span class="statusbar__hint"><kbd>esc</kbd> <span data-en="close">fechar</span></span>
+      </div>
+    </footer>
+
+    <!-- ===================== MODALS ===================== -->
+    <div class="modal modal--cv" id="cvModal" role="dialog" aria-modal="true" aria-labelledby="cvTitle" hidden>
+      <div class="modal__backdrop" data-cv-close></div>
+      <div class="modal__card panel cvmodal__card" role="document">
+        <div class="modal__bar panel__bar">
+          <span class="panel__title"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-download" /></svg><span id="cvTitle" data-en="select résumé language">selecionar idioma do currículo</span></span>
+          <button class="modal__close" id="cvClose" type="button" aria-label="Close (Esc)" data-en-aria="Close (Esc)"><kbd>esc</kbd></button>
+        </div>
+        <div class="modal__body cvmodal__body">
+          <p class="cmd"><span class="cmd__u">trickkz@portfolio</span><span class="cmd__p">:~$</span> <span>cv</span> <span class="cmd__flag">--lang</span></p>
+          <p class="cvmodal__lead" data-en="Choose the résumé version to download.">Escolha o idioma do currículo para baixar.</p>
+          <div class="cvmodal__options" aria-label="Resume language options" data-en-aria="Resume language options">
+            <a class="cv-option spot" href="assets/Patrick_Ferreira-DevOps.pdf?v=2" download="Patrick-Ferreira-DevOps.pdf" data-cv-download="pt">
+              <span class="cv-option__code">PT</span>
+              <span class="cv-option__text"><strong>Português</strong><small data-en="updated résumé · Brazil">currículo atualizado · Brasil</small></span>
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#i-download" /></svg>
+            </a>
+            <a class="cv-option spot" href="assets/Patrick_Ferreira-DevOps-EN.pdf?v=2" download="Patrick-Ferreira-DevOps-EN.pdf" data-cv-download="en">
+              <span class="cv-option__code">EN</span>
+              <span class="cv-option__text"><strong>English</strong><small data-en="updated résumé · international">updated résumé · international</small></span>
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#i-download" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="manModal" role="dialog" aria-modal="true" aria-labelledby="manTitle" hidden>
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__card panel" role="document">
+        <div class="modal__bar panel__bar">
+          <span class="panel__title"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-book" /></svg><span id="manTitle">manual</span></span>
+          <button class="modal__close" id="manClose" type="button" aria-label="Close (Esc)"><kbd>q</kbd></button>
+        </div>
+        <div class="modal__body" id="manBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js?v=18" defer></script>
+  </body>
+</html>
