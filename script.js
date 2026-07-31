@@ -1,5 +1,10 @@
 "use strict";
 
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag("js", new Date());
+gtag("config", "G-2F9ZQYJFQS");
+
 /* ============================================================ helpers */
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
