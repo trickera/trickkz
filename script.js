@@ -297,8 +297,8 @@ modal?.addEventListener("keydown", (e) => trapModalFocus(modal, e));
 
 /* ================================================= resume download modal */
 const CV_FILES = Object.freeze({
-  pt: { href: "assets/Patrick_Ferreira-DevOps.pdf?v=3", download: "Patrick-Ferreira-DevOps.pdf" },
-  en: { href: "assets/Patrick_Ferreira-DevOps-EN.pdf?v=3", download: "Patrick-Ferreira-DevOps-EN.pdf" },
+  pt: { href: "assets/Patrick_Ferreira-DevOps.pdf?v=4", download: "Patrick-Ferreira-DevOps.pdf" },
+  en: { href: "assets/Patrick_Ferreira-DevOps-EN.pdf?v=4", download: "Patrick-Ferreira-DevOps-EN.pdf" },
 });
 const cvModal = $("#cvModal");
 const cvClose = $("#cvClose");
@@ -479,9 +479,9 @@ const commands = {
   },
   xp() {
     return [
-      `<span class="term-ok">melhorenvio.com.br</span>  <span class="term-dim">${L("ago 2026 - atual · DevOps", "Aug 2026 - present · DevOps")}</span>`,
-      `<span class="term-ok">boostingmarket.com</span>  <span class="term-dim">dez 2024 - abr 2026 · ${L("Analista DevOps · remoto", "DevOps Analyst · remote")}</span>`,
-      L("EKS/K8s · HPA p/ 10k+ users · deploy 45→&lt;10min · MTTR -40%", "EKS/K8s · HPA for 10k+ users · deploy 45→&lt;10min · MTTR -40%"),
+      `<span class="term-ok">melhorenvio.com.br</span>  <span class="term-dim">${L("set 2026 - atual · DevOps Engineer", "Sep 2026 - present · DevOps Engineer")}</span>`,
+      `<span class="term-ok">freelance-devops</span>  <span class="term-dim">dez 2024 - abr 2026 · ${L("autônomo · remoto", "freelance · remote")}</span>`,
+      L("Projeto BoostingMarket.com · AWS · Kubernetes · CI/CD · IaC · Grafana", "BoostingMarket.com project · AWS · Kubernetes · CI/CD · IaC · Grafana"),
       `<span class="term-ok">ecossistema-xp</span>  <span class="term-dim">mai 2022 - jul 2024 · 500+ users · 98%+ SLA</span>`,
     ];
   },

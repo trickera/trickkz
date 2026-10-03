@@ -19,8 +19,8 @@ DATA = {
         "skills": "AWS · Azure · GCP · Terraform · Docker · Kubernetes · CI/CD · GitHub Actions · Observabilidade · Python · Bash · PowerShell · Agentes de IA · RAG",
         "experience_title": "EXPERIÊNCIA",
         "jobs": [
-            ("DevOps | Melhor Envio · LWSA", "ago 2026 – atual", "Infraestrutura cloud, automação e confiabilidade."),
-            ("Analista DevOps | BoostingMarket.com", "dez 2024 – abr 2026", "Microsserviços em Kubernetes (AWS EKS), pipelines CI/CD, Terraform e observabilidade. Deploy médio de 45 para menos de 10 minutos; redução de 40% no MTTR."),
+            ("DevOps Engineer | Melhor Envio · LWSA", "set 2026 – atual", "Infraestrutura cloud, automação e confiabilidade."),
+            ("DevOps autônomo | Free Lance", "dez 2024 – abr 2026", "Atuação remota com AWS, Kubernetes, CI/CD, Python, Bash, infraestrutura como código e Grafana, incluindo projeto para o BoostingMarket.com."),
             ("Cofundador e Responsável Técnico | Dark Tech", "jul 2024 – dez 2024", "Infraestrutura AWS, automação e desenho de base operacional segura para consultoria tecnológica."),
             ("Líder de Suporte e Analista DevOps | Ecossistema XP", "mai 2022 – jul 2024", "Suporte e infraestrutura para mais de 500 usuários em ambiente financeiro regulado, com SLA acima de 98%."),
             ("Técnico de Suporte e Infraestrutura | Gigaware Informática", "2015 – 2020", "Manutenção de estações, servidores, redes locais e sistemas Windows."),
@@ -40,8 +40,8 @@ DATA = {
         "skills": "AWS · Azure · GCP · Terraform · Docker · Kubernetes · CI/CD · GitHub Actions · Observability · Python · Bash · PowerShell · AI Agents · RAG",
         "experience_title": "EXPERIENCE",
         "jobs": [
-            ("DevOps | Melhor Envio · LWSA", "Aug 2026 – present", "Cloud infrastructure, automation and reliability."),
-            ("DevOps Analyst | BoostingMarket.com", "Dec 2024 – Apr 2026", "Microservices on Kubernetes (AWS EKS), CI/CD pipelines, Terraform and observability. Reduced average deployment time from 45 to under 10 minutes and MTTR by 40%."),
+            ("DevOps Engineer | Melhor Envio · LWSA", "Sep 2026 – present", "Cloud infrastructure, automation and reliability."),
+            ("Freelance DevOps | Free Lance", "Dec 2024 – Apr 2026", "Remote work with AWS, Kubernetes, CI/CD, Python, Bash, Infrastructure as Code and Grafana, including a project for BoostingMarket.com."),
             ("Co-founder & Technical Lead | Dark Tech", "Jul 2024 – Dec 2024", "AWS infrastructure, automation and secure operational foundation for a technology consultancy."),
             ("Support Lead & DevOps Analyst | XP ecosystem", "May 2022 – Jul 2024", "Support and infrastructure for 500+ users in a regulated financial environment, with 98%+ SLA."),
             ("IT Support & Infrastructure Technician | Gigaware Informática", "2015 – 2020", "Workstation, server, local network and Windows system maintenance."),
