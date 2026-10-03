@@ -12,3 +12,4 @@ Thumbs.db
 
 # wrangler local cache
 .wrangler/
+tmp/

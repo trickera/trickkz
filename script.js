@@ -297,8 +297,8 @@ modal?.addEventListener("keydown", (e) => trapModalFocus(modal, e));
 
 /* ================================================= resume download modal */
 const CV_FILES = Object.freeze({
-  pt: { href: "assets/Patrick_Ferreira-DevOps.pdf?v=2", download: "Patrick-Ferreira-DevOps.pdf" },
-  en: { href: "assets/Patrick_Ferreira-DevOps-EN.pdf?v=2", download: "Patrick-Ferreira-DevOps-EN.pdf" },
+  pt: { href: "assets/Patrick_Ferreira-DevOps.pdf?v=3", download: "Patrick-Ferreira-DevOps.pdf" },
+  en: { href: "assets/Patrick_Ferreira-DevOps-EN.pdf?v=3", download: "Patrick-Ferreira-DevOps-EN.pdf" },
 });
 const cvModal = $("#cvModal");
 const cvClose = $("#cvClose");
@@ -400,18 +400,19 @@ const commands = {
   },
   about() {
     return [
-      L("8+ anos em TI: suporte → infra → cloud → DevOps.", "8+ years in IT: support → infra → cloud → DevOps."),
-      L("Foco em confiabilidade, segurança, observabilidade, IaC e CI/CD.", "Focused on reliability, security, observability, IaC and CI/CD."),
+      L("8+ anos em TI: suporte → infra → cloud → DevOps e IA.", "8+ years in IT: support → infra → cloud → DevOps and AI."),
+      L("Cloud e confiabilidade no Melhor Envio; aplicações, copilotos e agentes de IA com LLMs e RAG.", "Cloud and reliability at Melhor Envio; AI applications, copilots and agents with LLMs and RAG."),
       `<span class="term-dim">${L("seção completa:", "full section:")}</span> <span class="term-key">goto about</span>`,
     ];
   },
   certs() {
     return [
+      '<span class="term-ok">[✓]</span> AWS Certified AI Practitioner <span class="term-dim">· AWS</span>',
       '<span class="term-ok">[✓]</span> DevOps &amp; Site Reliability Engineering <span class="term-dim">· Linux Foundation</span>',
       '<span class="term-ok">[✓]</span> Cybersecurity Essentials <span class="term-dim">· Linux Foundation</span>',
       `<span class="term-ok">[✓]</span> GitHub Actions: ${L("Automação de Workflows", "Workflow Automation")} <span class="term-dim">· GitHub / Microsoft</span>`,
       '<span class="term-ok">[✓]</span> Cisco Network Basics <span class="term-dim">· Cisco</span>',
-      `<span class="term-dim">${L("formação:", "education:")}</span> ${L("Ciência da Computação · UniRitter · formado 2026", "Computer Science · UniRitter · graduate 2026")}`,
+      `<span class="term-dim">${L("formação:", "education:")}</span> ${L("Ciência da Computação · UniRitter · cursando", "Computer Science · UniRitter · in progress")}`,
     ];
   },
   social() {
@@ -439,8 +440,8 @@ const commands = {
   banner() {
     return [
       '<span class="term-ok">┌─[ trickkz@portfolio ]──────────────────────────┐</span>',
-      '<span class="term-ok">│</span>  DevOps &amp; Cloud Engineer · Porto Alegre, BR    <span class="term-ok">│</span>',
-      '<span class="term-ok">│</span>  8+ yrs · 98%+ SLA · 500+ users · open_to_work   <span class="term-ok">│</span>',
+      '<span class="term-ok">│</span>  DevOps &amp; AI Engineer · Porto Alegre, BR       <span class="term-ok">│</span>',
+      '<span class="term-ok">│</span>  8+ yrs · 98%+ SLA · 500+ users · DevOps @ Melhor Envio   <span class="term-ok">│</span>',
       '<span class="term-ok">└─────────────────────────────────────────────────┘</span>',
     ];
   },
@@ -464,7 +465,7 @@ const commands = {
   },
   sudo() { return ['<span class="term-err">guest is not in the sudoers file. This incident will be reported.</span>']; },
   vim() { return [L('pra sair do vim: Esc, :q! e reze. (aqui é só <span class="term-key">clear</span>)', 'to exit vim: Esc, :q! and pray. (here just <span class="term-key">clear</span>)')]; },
-  whoami() { return ["Patrick Ferreira", '<span class="term-dim">DevOps &amp; Cloud Engineer · Porto Alegre, BR · open_to_work</span>']; },
+  whoami() { return ["Patrick Ferreira", '<span class="term-dim">DevOps &amp; AI Engineer · Porto Alegre, BR · DevOps @ Melhor Envio</span>']; },
   ls() { return ['<span class="term-key">about/  stack/  xp/  projects/  certs/  contact/</span>']; },
   stack() {
     return [
@@ -472,12 +473,13 @@ const commands = {
       '<span class="term-amber">[iac/ci-cd]</span>     Terraform · Ansible · GitHub Actions · GitLab CI/CD · ArgoCD · Helm',
       '<span class="term-amber">[observability]</span> Datadog · Grafana · Prometheus · ELK · Zabbix · OTel',
       '<span class="term-amber">[security]</span>      KMS · IAM · RBAC · Hardening · DevSecOps',
-      '<span class="term-amber">[ai-ops]</span>        Claude · Claude Code · Codex · Copilot · Cursor · MCP',
+      '<span class="term-amber">[ai-engineering]</span> LLMs · RAG · fine-tuning · agentes · MCP · Codex',
       '<span class="term-amber">[systems]</span>       Linux/RHEL · Windows Server · VMware · AD · Python · Bash · PowerShell',
     ];
   },
   xp() {
     return [
+      `<span class="term-ok">melhorenvio.com.br</span>  <span class="term-dim">${L("ago 2026 - atual · DevOps", "Aug 2026 - present · DevOps")}</span>`,
       `<span class="term-ok">boostingmarket.com</span>  <span class="term-dim">dez 2024 - abr 2026 · ${L("Analista DevOps · remoto", "DevOps Analyst · remote")}</span>`,
       L("EKS/K8s · HPA p/ 10k+ users · deploy 45→&lt;10min · MTTR -40%", "EKS/K8s · HPA for 10k+ users · deploy 45→&lt;10min · MTTR -40%"),
       `<span class="term-ok">ecossistema-xp</span>  <span class="term-dim">mai 2022 - jul 2024 · 500+ users · 98%+ SLA</span>`,
@@ -505,12 +507,12 @@ const commands = {
     return [
       '<span class="term-ok">trickkz@portfolio</span>',
       '<span class="term-dim">-----------------</span>',
-      '<span class="term-key">role</span>     DevOps &amp; Cloud Engineer',
+      '<span class="term-key">role</span>     DevOps &amp; AI Engineer',
       '<span class="term-key">os</span>       Linux · Windows Server · VMware',
       '<span class="term-key">cloud</span>    AWS · Azure · GCP',
       `<span class="term-key">uptime</span>   ${L("8+ anos em TI", "8+ years in IT")}`,
       '<span class="term-key">sla</span>      98%+ · users 500+',
-      '<span class="term-key">status</span>   open_to_work',
+      '<span class="term-key">status</span>   DevOps @ Melhor Envio',
     ];
   },
   uptime() { return [`up <span class="term-ok">${L("8+ anos", "8+ years")}</span>, 500+ users, load average: <span class="term-ok">reliable</span>`]; },
@@ -579,7 +581,7 @@ function bootLines() {
     '<span class="term-ok">[ OK ]</span> mount /profile <span class="term-dim">… done</span>',
     '<span class="term-ok">[ OK ]</span> load stack modules <span class="term-dim">… done</span>',
     '<span class="term-ok">[ OK ]</span> observability online <span class="term-dim">· SLA 98%+</span>',
-    '<span class="term-ok">[ OK ]</span> status: <span class="term-amber">open_to_work</span>',
+    '<span class="term-ok">[ OK ]</span> status: <span class="term-amber">DevOps @ Melhor Envio</span>',
     `<span class="term-dim">${L("digite", "type")}</span> <span class="term-key">help</span> <span class="term-dim">+ enter</span>`,
   ];
 }

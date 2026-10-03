@@ -1,4 +1,4 @@
-# trickkz — Patrick Ferreira · DevOps &amp; Cloud Engineer
+# trickkz — Patrick Ferreira · DevOps &amp; AI Engineer
 
 Personal portfolio. Static site (HTML / CSS / vanilla JS, **no framework, no build step**), bilingual **PT/EN**, dark "ops console" terminal UI.
 
@@ -18,4 +18,4 @@ Just open `index.html` in a browser. No build, no dependencies.
 See [`DEPLOY.md`](DEPLOY.md) — Cloudflare Pages via a clean, minified `dist/`.
 
 ---
-DevOps &amp; Cloud Engineer · Porto Alegre, BR · [github.com/trickera](https://github.com/trickera)
+DevOps &amp; AI Engineer · Porto Alegre, BR · [github.com/trickera](https://github.com/trickera)
